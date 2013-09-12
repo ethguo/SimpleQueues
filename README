@@ -1,0 +1,30 @@
+SimpleQueues - BETA
+
+A lightweight queue plugin.
+
+This lightweight plugin allows you to create queues which, when full, will teleport a player to a set location.
+
+This is the initial release. It does not have many features and may be buggy. If you find any bugs, please report them using the ticket tracker. Feel free to suggest new features.
+
+IMPORTANT: As of the current version, /qconfig is buggy: It can only be used as a player, without providing coordinates.
+
+COMMANDS
+
+qlist: Lists a queue. "-a" lists the names of all queues.
+usage: /<command> <queue> OR /<command> -a
+
+qadd: Adds yourself or another player to a queue.
+usage: /<command> <queue> [player]
+
+qremove: Removes yourself or another player from a queue.
+usage: /<command> <queue> [player]
+
+qreset: Resets a queue. "-a" resets all queues.
+usage: /<command> <queue> OR /<command> -a
+
+qconfig: Creates or deletes a queue.
+usage: /<command> create <name> <size> [tpX] [tpY] [tpZ] [tpWorld]
+    OR /<command> delete <queue>
+
+CHANGELOG
+- v0.1.0: Initial Release
